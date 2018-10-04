@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <!-- bootstrap, firebase-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-styled">
+            <a class="navbar-brand" href="#">Browswer Tabs</a>
+                
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="found-form.html">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lost-form.html">Picture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">About</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+        <div class="main">
+
+        <div class="container container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- Found Pets Card with button -->
+                        <div class="card card-centered" "col d-flex justify-content-center" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Leave a Message!!</h5>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="name-input">Who is the Message for?</label>
+                                                <input class="form-control" id="name-input" placeholder="Danibelle, Rage, Huntress" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea rows="4" cols="30" class="form-control" id="message-input" placeholder="That fox is so dreamy" type="text"></textarea>
+                                                <!--<input style = "height: 100px text-justify" class="form-control input-break" id="message-input" placeholder="" type="text">-->
+                                            </div>
+                                            <button class="btn btn-primary float-right" id="add-msg-btn">Submit</button>
+                                            </form>
+                                    </div>
+                                    </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="card mb-4">
+                <div class="card-header">Messages!</div>
+                <div class="card-body">
+                  <table class="table table-sm table-hover" id='message-table'>
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            
+    
+    <script src="javascript.js"></script>
+    
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+</body>
+
+</html>
